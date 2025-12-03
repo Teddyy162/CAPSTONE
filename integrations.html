@@ -12,59 +12,84 @@
 </head>
 
 <body>
-    <header class="header border border-bottom">
-        <div class="container d-flex align-items-center align-self-stretch justify-content-between">
-            <div class="logo w-50">
-                <a href="/index.html" class="py-3 w-full" style="text-decoration: none;">
+    <header class="header border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container d-flex align-items-center">
+
+                <!-- LOGO -->
+                <a href="/index.html" class="navbar-brand d-flex align-items-center" style="text-decoration: none;">
                     <span class="text-primary fs-5 fw-bold">Astro</span>
                     <span class="text-secondary fw-light">ship</span>
-                    <span class="bg-secondary-subtle text-dark p-2 rounded fw-bold py-1">pro</span>
+                    <span class="bg-secondary-subtle text-dark p-2 rounded fw-bold py-1 ms-1">pro</span>
                 </a>
-            </div>
-            <nav class="navbar navbar-expand-lg w-100">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/features.html">Features</a></li>
-                                    <li><a class="dropdown-item" href="/integrations.html">Integrations</a></li>
-                                    <li><a class="dropdown-item" href="/blog-details.html">Blog Details</a></li>
-                                    <li><a class="dropdown-item" href="/404-home.html">404 Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="Login gap-3">
-                        <a class="login-content text-dark py-3 mx-2 " style="text-decoration: none;" href="#">Login</a>
-                        <a class="btn-login text-white" style="text-decoration: none;" href="#">
-                            <button type="button" class="btn btn-primary" aria-current="page" href="#">
-                                Try for Free
-                                <i class="fa fa-angle-right"></i>
+
+                <!-- NÚT HAMBURGER (MOBILE) -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- MENU Ở GIỮA + LOGIN/CTA CHO MOBILE -->
+                <div class="collapse navbar-collapse flex-lg-grow-1 justify-content-lg-center" id="mainNavbar">
+
+                    <!-- MENU CHÍNH -->
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-3 text-center text-lg-start">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/features.html">Features</a></li>
+                                <li><a class="dropdown-item" href="/integrations.html">Integrations</a></li>
+                                <li><a class="dropdown-item" href="/blog-details.html">Blog Details</a></li>
+                                <li><a class="dropdown-item" href="/404-home.html">404 Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- LOGIN + TRY FOR FREE: CHỈ HIỆN TRONG HAMBURGER (MOBILE) -->
+                    <div class="d-lg-none d-flex flex-column align-items-center gap-2 mt-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            Login
+                        </a>
+                        <a href="#" class="btn btn-primary d-flex align-items-center rounded-pill px-3">
+                            Try for Free
+                            <i class="fa fa-angle-right ms-1"></i>
                         </a>
                     </div>
                 </div>
-            </nav>
-        </div>
+
+                <!-- LOGIN + TRY FOR FREE: CHỈ HIỆN TRÊN DESKTOP (BÊN PHẢI) -->
+                <div class="d-none d-lg-flex align-items-center ms-3 gap-2">
+                    <a href="#" class="text-dark text-decoration-none">
+                        Login
+                    </a>
+                    <a href="#" class="btn btn-primary d-flex align-items-center rounded-pill px-3">
+                        Try for Free
+                        <i class="fa fa-angle-right ms-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
     </header>
 
     <section class="integrations">

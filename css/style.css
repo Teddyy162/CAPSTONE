@@ -1,0 +1,141 @@
+* {
+    font-size: 16px;
+}
+
+.header .nav-item a {
+    transition: all 0.5s;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px;
+    z-index: 100;
+}
+
+.header .nav-item a:hover {
+    transition: all 0.5s;
+    color: rgba(6, 31, 226, 0.882);
+}
+
+.header .btn-primary {
+    border: 1px;
+    border-radius: 15px;
+}
+
+.header .btn-login i {
+    content: "";
+    font-size: 12px;
+}
+
+.workflows .btn-primary {
+    border: 1px;
+    border-radius: 15px;
+}
+
+.workflows .check-content .contact-sales a {
+    transition: all 0.5s;
+}
+
+.workflows .check-content .contact-sales a:hover {
+    color: rgba(6, 31, 226, 0.882) !important;
+    transition: all 0.5s;
+}
+
+.testimonial-section {
+    background: radial-gradient(circle at top, #eef2ff 0, #ffffff 55%, #ffffff 100%);
+}
+
+.testimonial-title span {
+    background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #e5e7eb;
+    /* viền xám nhạt */
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    border-color: #6366f1;
+    box-shadow: 0 26px 70px rgba(15, 23, 42, 0.24);
+}
+
+.testimonial-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #111827;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+/* Gradient chữ "start a website" */
+.astroship-text-gradient {
+    color: rgb(79, 70, 229);
+    font-size: 40px;
+}
+
+/* Card chung */
+.astroship-feature-card {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.04);
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+        border-color 0.15s ease-out;
+}
+
+/* Hover nổi lên nhẹ */
+.astroship-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
+    border-color: #c7d2fe;
+}
+
+/* Ảnh trong card (dùng ratio của Bootstrap) */
+.astroship-feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Badge nhỏ trên card */
+.astroship-feature-badge {
+    background-color: #eef2ff;
+    color: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Tiêu đề section */
+.astroship-features-section h2 {
+    font-size: clamp(1.75rem, 2.4vw, 2.5rem);
+}
+
+/* Bỏ gạch dưới tất cả link trong footer */
+.astro-footer a {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: gray;
+}
